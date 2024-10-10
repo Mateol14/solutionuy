@@ -1,24 +1,10 @@
 
-#foto {
-    height: 50px;
-    }
-
-    #instagramlogo {
-        height: 50px;
-        }
-
-
-#twitterlogo {
-    height: 50px;
-    }
-
-    #facebooklogo {
-    height: 50px;
-            }
 
 /* HEADER CSS */
 #header{
-    background-color: #45719C;
+    justify-content: center;
+    display: flex;
+    background-color: #1f1f1f;
     height: 60px;
 }
 
@@ -32,7 +18,7 @@
 }
 
 #header nav {
-    background-color: #45719C;
+    background-color: #1f1f1f;
     height: 100%;
 }
 
@@ -51,26 +37,37 @@
 }
 
 #nav ul li a {
-    padding: 0px 10px 0px 10px;
+    margin-left: 8px;
     color: white;
     font-size: 24px;
-    font-family: monospace;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
 }
 
 #nav a:hover {
-    background-color:#1a1a1b;
+    color:#1a1a1b;
+    background-color:#45719C;
+    border-radius: 10px;
+}
+#nav a:active {
+    color: #000000;
+    background-color:#ffffff;
     border-radius: 40px;
 }
 /* MAIN CSS */
 #main{
-
+    flex-direction: column;
+display: flex;
 }
 
 #body{
+    display: flex;
     max-width: 1400px;
 }
 /* Titulo*/
 .titulo{
+    justify-content: center;
     background-color: #f3f1f1;
 }
 
@@ -80,7 +77,7 @@
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-weight: 100;
     font-size: 50px;
-    color: #000000;
+    color:#1a1a1b;
 }
 
 .titulo h2 {
@@ -97,55 +94,70 @@
     background-color: #45719C;
     }
 .tituloQuienesSomos{
-    background-color: #000000e7;
+    background-color: #1a1a1b;;
     font-size: 36px;
     text-align: center;
     padding-bottom: 4px;
-    margin:14px 740px 0px 740px;
     color: rgb(255, 255, 255);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     }
 .quienesSomosText p{
+    text-align: center;
     font-size: 20px;
-    padding: 20px 0px 0px 15px;
-    margin: 0px 300px 0px 300px;
+    margin: 10px 300px 10px 300px;
     color: rgb(247, 240, 240);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     }
-    
-    .quienesSomosText img{
-        margin: 20px 360px 16px 400px;
-        border-radius: 40px;
+    .imgQuienesSomosText{
+        margin-bottom: 5px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .imgQuienesSomosText img{
+        height: 250px;
+        width: 500px; 
+        border-radius: 20px;
         }
 
 /* Oficina Index */
 .OficinaText {
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
     background-color: #000000d5;
     }
 .tituloOficina{
+    display: flex;
+    justify-content: center;
+    text-align: center;
     background-color:#ffffff;
     font-size: 36px;
     text-align: center;
     padding-bottom: 4px;
-    margin:0px 740px 0px 740px;
+
     color: rgba(8, 8, 8, 0.89);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     }
 .OficinaText p{
+    text-align: center;
     font-size: 20px;
-    padding: 20px 0px 0px 15px;
-    margin: 0px 300px 10px 300px;
+    margin: 10px 300px 10px 300px;
     color: rgb(255, 255, 255);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     }
     
-    .OficinaText img{
-        width: 1264px;
-        height: 500px;
-        margin: 10px 300px;
-        border-radius: 40px;
-        
-        }
+    .imgOficinaText {
+        margin-bottom: 5px;
+display: flex;
+justify-content: center;
+    }
+    .imgOficinaText img{
+        height: 250px;
+        width: 500px; 
+        border-radius: 20px;
+    }
+
         /* FOOTER CSS */
 
         #footer{
@@ -166,12 +178,19 @@
             font-weight: 500;
             font-style: normal;
         }
+        .footerMidTitulo{
+            margin-top: 12px;
+        }
         .logoFooter {
+            margin-top: 5px;
             justify-content: center;
         }
         .logoFooter img {
+            width: 100px;
+            border-radius: 100%;
         }
         .footerLinks{
+            margin-top: 12px;
             text-align: center;
             justify-content: flex-start;
             height: 100%;
@@ -202,10 +221,14 @@
             font-style: normal;
         }
         .footerNuestrasRedes i {
+            font-size: 30px;
             color: white;
         }
+        .footerNuestrasRedes i:hover {
+            color:#1a1a1b;
+        }
         .footerNuestrasRedes h2 {
-            margin-top: 5px;
+        
             color: white;
         }
         .footerNuestrasRedes p {
@@ -484,3 +507,6 @@ text-align: center;
     width: 100px;
     text-align: center;
     }
+
+
+    /*paginas GRIDSS*/
